@@ -1,0 +1,54 @@
+/* Estilos para centrar la página y darle espacio a los elementos */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid blue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos el 100% de la altura de la ventana */
+}
+
+nav {
+    background-color: #343a40; /* Cambia el color de fondo del menú según tus preferencias */
+    color: white; /* Cambia el color de texto del menú según tus preferencias */
+    flex-shrink: 0; /* Evita que el menú se encoja */
+}
+
+.slider {
+    flex-grow: 1;
+    max-height: 300px; /* Ajusta el tamaño máximo de las imágenes del slider según tus preferencias */
+    width: auto;
+    border: 2px solid red;
+}
+
+/* Contenedor para las tarjetas */
+.cartas {
+    display: flex; /* Las tarjetas se colocarán en línea */
+    justify-content: space-around; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Si no caben en el ancho, se envolverán a la siguiente fila */
+    margin-top: 30px;
+    border: 2px solid purple;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px); /* Tamaño de las tarjetas, calculado para tres tarjetas por fila con margen entre ellas */
+    margin: 0 10px; /* Espacio horizontal entre las tarjetas */
+    border: 1px solid #ccc; /* Borde opcional para las tarjetas */
+}
+.carousel-inner img {
+    max-width: 30%; /* Ajusta el ancho máximo al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente al ancho */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #343a40; /* Cambia el color de fondo del footer según tus preferencias */
+    color: white; /* Cambia el color de texto del footer según tus preferencias */
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Empuja el footer hacia abajo para que esté al final de la página */
+}
